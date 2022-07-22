@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: center;
     /* padding: 20px auto; */
-    margin: 8% auto;
+    margin: 15% auto;
 
 }
 .modal-close-box{
@@ -96,6 +96,12 @@
     background-color: #fff;
     border-radius: 12px;
     padding: 25px 10px;
+
+}
+@media (max-width: 600.98px) {
+    .confirm__container{
+        width: 95vw;
+    }
 
 }
 .confirm__container h4{
