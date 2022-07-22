@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <title>Book details</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="./home.html" class="header__logo">
+          <div class="logo__box">
+            <img
+              class="header__logo-iamge"
+              src="./assets/booksLogo.png"
+              alt="books"
+            />
+          </div>
+          <h1>КНИГИ</h1>
+        </a>
+        <div class="header__navigations">
+          <div class="header__user">
+            <div class="header__avatar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 334.145 334.145"
+              >
+                <path
+                  style="fill: #287f9a"
+                  d="M258.192,319.168c-10.156-18.038-32.901-32.078-61.286-37.615v-21.045
+		c20.383-12.644,34.459-39.131,34.459-69.854c0-42.967-27.448-77.796-61.31-77.796s-61.31,34.829-61.31,77.796
+		c0,30.729,14.076,57.216,34.459,69.854v21.051c-29.9,5.812-53.582,21.027-62.867,40.426C32.203,292.627,0,239.624,0,179.233
+		C0,87.11,74.95,12.16,167.072,12.16s167.072,74.95,167.072,167.072C334.145,237.762,303.875,289.316,258.192,319.168z"
+                />
+              </svg>
+            </div>
+            <p class="header__username">UserName</p>
+          </div>
+          <div class="header__quite">
+            <a class="quit__button" href="./index.html"> Выход </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="details__main">
+      <div class="details__container">
+        <div class="details__head">
+          <a href="./home.html">
+            <svg
+              class="back__btn"
+              width="40"
+              height="43"
+              viewBox="0 0 40 43"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="40" height="40" rx="12" fill="#EDEDED" />
+              <path
+                d="M18.0151 20.6699L24.9878 26.9932L21.5869 30.7871L11.0425 20.875L21.3477 10.1597L25.022 13.6289L18.0151 20.6699Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <h2 class="details__title">Информация о книге</h2>
+        </div>
+        <div class="details__box">
+          <div class="details__box-title">
+            <div class="details__box-text-title">
+              <h2></h2>
+              <p></p>
+            </div>
+            <div class="details__box-image-title">
+              <img src="./assets/forImage.png" alt="forImage" />
+            </div>
+          </div>
+          <ul class="details__box-description">
+            <li>
+              <p>Издательтсво:</p>
+              <span class="publishHouse"></span>
+            </li>
+            <li>
+              <p>Кол-во страниц:</p>
+              <span class="pagesNumber"></span>
+            </li>
+            <li>
+              <p>Язык оригинала:</p>
+              <span class="originalLanguage"></span>
+            </li>
+            <li>
+              <p>Жанры:</p>
+              <span class="genres"></span>
+            </li>
+            <li>
+              <p>Год издания:</p>
+              <span class="publishYear"></span>
+            </li>
+          </ul>
+          <div class="details__box-buttons">
+            <div class="details__add-button">
+              <button
+                id="home__open-modal"
+                style="margin: 0px"
+                class="reusable__button"
+              >
+                Редактировать
+              </button>
+            </div>
+            <svg
+              class="home__favorite"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="margin-right: 20px"
+            >
+              <rect width="40" height="40" rx="12" fill="#EDEDED" />
+              <path
+                d="M29.3762 13.5401C28.5386 11.8252 26.1258 10.4221 23.3191 11.239C21.9779 11.6255 20.8078 12.4543 19.9999 13.59C19.1919 12.4543 18.0218 11.6255 16.6806 11.239C13.8677 10.4346 11.4611 11.8252 10.6235 13.5401C9.44831 15.9409 9.93588 18.6411 12.0737 21.5658C13.7489 23.8544 16.143 26.1742 19.6186 28.8681C19.7284 28.9536 19.8637 29 20.003 29C20.1423 29 20.2776 28.9536 20.3874 28.8681C23.8567 26.1804 26.257 23.8793 27.9323 21.5658C30.0638 18.6411 30.5514 15.9409 29.3762 13.5401Z"
+                fill="currentColor"
+              />
+            </svg>
+            <svg
+              class="home__delete confirm-to-delete"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="40" height="40" rx="12" fill="#EDEDED" />
+              <path
+                d="M29.1667 13.6H25.8333V11.6C25.8333 10.7175 25.0859 10 24.1667 10H15.8333C14.9141 10 14.1667 10.7175 14.1667 11.6V13.6H10.8333C10.3724 13.6 10 13.9575 10 14.4V15.2C10 15.31 10.0937 15.4 10.2083 15.4H11.7812L12.4245 28.475C12.4661 29.3275 13.2005 30 14.0885 30H25.9115C26.8021 30 27.5339 29.33 27.5755 28.475L28.2187 15.4H29.7917C29.9062 15.4 30 15.31 30 15.2V14.4C30 13.9575 29.6276 13.6 29.1667 13.6ZM23.9583 13.6H16.0417V11.8H23.9583V13.6Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="add__modal">
+      <div class="add__modal-container">
+        <form class="reusable__container" style="padding-top: 0px">
+          <div class="modal-close-box">
+            <img class="modal-close" src="./assets/x.svg" alt="modal-close" />
+          </div>
+          <h3 class="reusable__title">Редактировать книгу</h3>
+          <div class="reusable__input-box">
+            <input
+              type="text"
+              name="name"
+              class="reusable__input edit__input"
+              placeholder="Название"
+            />
+            <p class="reusable__input-errorText">* Обязательно</p>
+          </div>
+          <div class="reusable__input-box">
+            <input
+              type="text"
+              name="author"
+              class="reusable__input edit__input"
+              placeholder="Автор"
+            />
+            <p class="reusable__input-errorText">* Обязательно</p>
+          </div>
+          <div class="reusable__input-box">
+            <input
+              type="text"
+              name="publishHouse"
+              class="reusable__input edit__input"
+              placeholder="Издательтсво"
+            />
+            <p class="reusable__input-errorText">* Обязательно</p>
+          </div>
+          <div class="reusable__input-box">
+            <input
+              type="text"
+              name="pagesNumber"
+              class="reusable__input edit__input"
+              placeholder="Кол-во страниц"
+            />
+            <p class="reusable__input-errorText">* Обязательно</p>
+          </div>
+          <div class="reusable__input-box">
+            <input
+              type="text"
+              name="originalLanguage"
+              class="reusable__input edit__input"
+              placeholder="Язык оригинала"
+            />
+            <p class="reusable__input-errorText">* Обязательно</p>
+          </div>
+          <div class="reusable__input-box">
+            <input
+              type="text"
+              name="genres"
+              class="reusable__input edit__input"
+              placeholder="Жанры"
+            />
+            <p class="reusable__input-errorText">* Обязательно</p>
+          </div>
+          <div class="modal__control-box">
+            <div class="modal__control-trash confirm-to-delete">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.1667 3.6H15.8333V1.6C15.8333 0.7175 15.0859 0 14.1667 0H5.83333C4.91406 0 4.16667 0.7175 4.16667 1.6V3.6H0.833333C0.372396 3.6 0 3.9575 0 4.4V5.2C0 5.31 0.09375 5.4 0.208333 5.4H1.78125L2.42448 18.475C2.46615 19.3275 3.20052 20 4.08854 20H15.9115C16.8021 20 17.5339 19.33 17.5755 18.475L18.2187 5.4H19.7917C19.9062 5.4 20 5.31 20 5.2V4.4C20 3.9575 19.6276 3.6 19.1667 3.6ZM13.9583 3.6H6.04167V1.8H13.9583V3.6Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <p>Удалить</p>
+            </div>
+            <svg
+              class="home__favorite"
+              width="50"
+              height="50"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="40" height="40" rx="12" fill="#EDEDED" />
+              <path
+                d="M29.3762 13.5401C28.5386 11.8252 26.1258 10.4221 23.3191 11.239C21.9779 11.6255 20.8078 12.4543 19.9999 13.59C19.1919 12.4543 18.0218 11.6255 16.6806 11.239C13.8677 10.4346 11.4611 11.8252 10.6235 13.5401C9.44831 15.9409 9.93588 18.6411 12.0737 21.5658C13.7489 23.8544 16.143 26.1742 19.6186 28.8681C19.7284 28.9536 19.8637 29 20.003 29C20.1423 29 20.2776 28.9536 20.3874 28.8681C23.8567 26.1804 26.257 23.8793 27.9323 21.5658C30.0638 18.6411 30.5514 15.9409 29.3762 13.5401Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div class="reusable__button-box">
+            <button type="submit" class="reusable__button">
+              Сохранить изменения
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="confirm__delete-modal">
+      <div class="confirm__container">
+        <h4>Вы уверены, что хотите удалить?</h4>
+        <img src="./assets/confirmation.svg" alt="confirmation-icon" />
+        <div class="confirm__delete-btns">
+          <button class="confirm__no-btn">нет</button>
+          <button class="confirm__yes-btn">да</button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="module" src="./js/index.js"></script>
+</html>

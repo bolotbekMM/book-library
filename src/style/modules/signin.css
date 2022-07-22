@@ -1,0 +1,32 @@
+.signin__container{
+    max-width: 1440px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px auto;
+}
+.signin__logo-box{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.signin__logo-box img{
+   width: 340px;
+   height: 340px;
+
+}
+.signin__form-box{
+    display: flex;
+    align-items: center;
+
+}
+.signin__form{
+    border: 1px solid red;
+    padding: 40px 60px;
+    border-radius: 10px; 
+    background-color: #fff;
+
+}

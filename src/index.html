@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <title>signin</title>
+  </head>
+  <body>
+    <div class="signin__container">
+      <div class="signin__logo-box">
+        <img src="./assets/books.png" alt="books" />
+      </div>
+      <div class="signin__form-box">
+        <form class="reusable__container">
+          <h3 class="reusable__title">Вход</h3>
+          <div class="reusable__input-box">
+            <input
+              type="text"
+              name="username"
+              class="reusable__input"
+              placeholder="Имя пользователя"
+            />
+            <p class="reusable__input-errorText">* Обязательно</p>
+          </div>
+          <div class="reusable__input-box">
+            <input
+              type="password"
+              name="password"
+              class="reusable__input"
+              placeholder="Пароль"
+            />
+            <p class="reusable__input-errorText">* Обязательно</p>
+          </div>
+          <div class="reusable__button-box">
+            <button type="submit" class="reusable__button">Войти</button>
+            <p class="errorTextForSignIn">*Ввели неправильные данные</p>
+          </div>
+          <div class="registration__box">
+            <a href="./login.html">Регистрация</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <section class="confirm__delete-modal">
+      <div class="confirm__container">
+        <img class="loadingData" src="./assets/loading.svg" alt="loading"></img>
+       
+      </div>
+    </section>
+  </body>
+  <script type="module" src="./js/index.js"></script>
+</html>

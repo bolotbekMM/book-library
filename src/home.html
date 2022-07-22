@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="./home.html" class="header__logo">
+          <div class="logo__box">
+            <img
+              class="header__logo-iamge"
+              src="./assets/booksLogo.png"
+              alt="books"
+            />
+          </div>
+          <h1>КНИГИ</h1>
+        </a>
+        <div class="header__navigations">
+          <div class="header__user">
+            <div class="header__avatar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 334.145 334.145"
+              >
+                <path
+                  style="fill: #287f9a"
+                  d="M258.192,319.168c-10.156-18.038-32.901-32.078-61.286-37.615v-21.045
+		c20.383-12.644,34.459-39.131,34.459-69.854c0-42.967-27.448-77.796-61.31-77.796s-61.31,34.829-61.31,77.796
+		c0,30.729,14.076,57.216,34.459,69.854v21.051c-29.9,5.812-53.582,21.027-62.867,40.426C32.203,292.627,0,239.624,0,179.233
+		C0,87.11,74.95,12.16,167.072,12.16s167.072,74.95,167.072,167.072C334.145,237.762,303.875,289.316,258.192,319.168z"
+                />
+              </svg>
+            </div>
+            <p class="header__username">UserName</p>
+          </div>
+          <div class="header__quite">
+            <a class="quit__button" href="./index.html"> Выход </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="home__main">
+      <div class="home__container">
+        <h2 class="home__title">Список книг</h2>
+        <ul class="home__books-list">
+        </ul>
+        <div class="home__add-button">
+          <button id="home__open-modal" class="reusable__button">
+            Добавить книгу
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="add__modal">
+      <div class="add__modal-container">
+        <form class="reusable__container" style="padding-top: 0px">
+          <div class="modal-close-box">
+            <img class="modal-close" src="./assets/x.svg" alt="modal-close" />
+          </div>
+          <h3 class="reusable__title">Добавить книгу</h3>
+          <div class="reusable__input-box">
+            <input type="text" name="name" class="reusable__input" placeholder="Название" />
+            <p class="reusable__input-errorText">* Обязательно</p>
+          </div>
+          <div class="reusable__input-box">
+            <input type="text" name="author" class="reusable__input" placeholder="Автор" />
+            <p class="reusable__input-errorText">* Обязательно</p>
+          </div>
+          <div class="reusable__input-box">
+            <input
+              type="text"
+              name="publishHouse"
+              class="reusable__input"
+              placeholder="Издательтсво"
+            />
+            <p class="reusable__input-errorText">* Обязательно</p>
+          </div>
+          <div class="reusable__input-box">
+            <input
+              type="number"
+              name="pagesNumber"
+              class="reusable__input"
+              placeholder="Кол-во страниц"
+            />
+            <p class="reusable__input-errorText">* Обязательно</p>
+          </div>
+          <div class="reusable__input-box">
+            <input
+              type="number"
+              name="publishYear"
+              class="reusable__input"
+              placeholder="Год издания"
+            />
+            <p class="reusable__input-errorText">* Обязательно</p>
+          </div>
+          <div class="reusable__input-box">
+            <input
+              type="text"
+              name="originalLanguage"
+              class="reusable__input"
+              placeholder="Язык оригинала"
+            />
+            <p class="reusable__input-errorText">* Обязательно</p>
+          </div>
+          <div class="reusable__input-box">
+            <input type="text" name="genres" class="reusable__input" placeholder="Жанры" />
+            <p class="reusable__input-errorText">* Обязательно</p>
+          </div>
+          <div class="reusable__button-box">
+            <button type="submit" class="reusable__button">Сохранить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="confirm__delete-modal">
+      <div class="confirm__container">
+        <h4>Вы уверены, что хотите удалить?</h4>
+        <img src="./assets/confirmation.svg" alt="confirmation-icon" />
+        <div class="confirm__delete-btns">
+          <button class="confirm__no-btn">нет</button>
+          <button class="confirm__yes-btn">да</button>
+      </div>
+    </section>
+  </body>
+  <script type="module" src="./js/index.js"></script>
+</html>

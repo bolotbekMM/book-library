@@ -1,0 +1,151 @@
+.reusable__container{
+    width: 30vw;
+    padding: 40px 60px;
+    border-radius: 10px; 
+    background-color: #fff;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+
+}
+.reusable__title{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+
+    line-height: 30px;
+    color: #000000;
+    margin: 0px 0px 30px 0px;
+
+}
+.reusable__input-box{
+    position: relative;
+    width: 100%;
+}
+.reusable__input{
+    width: 100%;
+    border: 2.5px solid rgb(218, 88, 13);
+    border-radius: 10px;
+    padding: 10px 20px;
+    outline: none;
+    margin: 0px 0px 25px;
+
+    font-family: 'Poppins' , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+.reusable__input::placeholder{
+    font-family: 'Poppins' , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #B1B1B1;
+}
+.reusable__input-errorText{
+    position: absolute;
+    top: 53px;
+    left: 10px;
+
+    font-family: 'Poppins' , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+.reusable__input-errorPassword{
+    position: absolute;
+    top: 53px;
+    left: 10px;
+
+    font-family: 'Poppins' , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: red;
+    display: none;
+
+}
+
+.reusable__input-error{
+    display: block;
+
+}
+
+
+
+
+.reusable__button-box{
+    position: relative;
+    width: 100%;
+}
+.errorTextForSignIn{
+    position: absolute;
+    top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-align:start;
+    color: red;
+    display: none;
+}
+
+.showErrorText{
+    display: block;
+
+}
+.reusable__button{
+    background-color: #287F9A;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+    margin: 0px 0px 20px;
+    cursor: pointer;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.reusable__button:hover{
+    background-color: #3e99b3;
+}
+.registration__box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.registration__box a{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+.registration__box a:hover{
+    color: rgb(25, 11, 148);
+    text-decoration:underline ;
+}

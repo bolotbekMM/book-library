@@ -1,0 +1,103 @@
+.home__main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.home__container{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.home__title{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 66px;
+    color: #000000;
+    margin-top: 40px;
+}
+.home__books-list{
+    margin-top: 40px;
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.home__books-list li{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 440px;
+    height: 188px;
+    margin: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+}
+.home__books-list a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 30px;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    
+}
+.home__book-describtion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+.home__book-describtion h4{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 14px;
+}
+.home__book-describtion p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.home__book-controll{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.home__favorite{
+    color: #B1B1B1;
+    cursor: pointer;
+}
+.home__favorite:hover{
+    color: #f56d76;
+}
+
+.home__favoritAdded{
+    color: red;
+}
+.home__delete{
+    cursor: pointer;
+    color: #B1B1B1;
+}
+.home__delete:hover{
+    color: #287F9A;
+}
+.home__add-button{
+    width: 312px;
+    margin-top: 40px;
+}
