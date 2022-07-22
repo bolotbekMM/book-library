@@ -10,13 +10,11 @@
     height: 100vh;
     display: flex;
     align-items: center;
-
 }
 
 .signin__logo-box img{
    width: 340px;
    height: 340px;
-
 }
 .signin__form-box{
     display: flex;
@@ -28,5 +26,17 @@
     padding: 40px 60px;
     border-radius: 10px; 
     background-color: #fff;
+
+}
+
+@media (max-width: 950.98px) {
+    .signin__container{
+        height: 100vh;
+       
+    }
+    .signin__logo-box{
+        display: none;
+    }
+    
 
 }

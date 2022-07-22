@@ -149,3 +149,28 @@
     color: rgb(25, 11, 148);
     text-decoration:underline ;
 }
+@media (max-width: 1190.98px) {
+    .reusable__container{
+        width: 45vw;
+        padding: 40px 60px;
+        border-radius: 10px; 
+        background-color: #fff;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+    
+    }
+}
+@media (max-width: 790.98px) {
+    .reusable__container{
+        width: 70vw;
+            
+    }
+
+}
+@media (max-width: 540.98px) {
+    .reusable__container{
+        width: 90vw;
+        padding: 40px 20px;
+            
+    }
+
+}

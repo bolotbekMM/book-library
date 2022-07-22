@@ -101,3 +101,17 @@
     width: 312px;
     margin-top: 40px;
 }
+
+@media (max-width: 420.98px) {
+
+    .home__books-list{
+        width: 95vw;
+       
+    }
+    .home__add-button {
+        width: 90vw;
+    }
+    
+    
+
+}

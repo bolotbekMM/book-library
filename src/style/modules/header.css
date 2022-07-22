@@ -101,4 +101,26 @@
     color: #287F9A;
 
 }
+@media (max-width: 600.98px) {
+    .header__logo h1{
+        display: none;
+        
+    }
+
+    
+
+}
+
+@media (max-width: 420.98px) {
+    .header__username{
+        display: none;
+        
+    }
+    .header__container {
+        padding: 20px 20px;
+    }
+
+    
+
+}
 

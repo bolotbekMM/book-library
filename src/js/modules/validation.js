@@ -98,8 +98,10 @@ async function inputsRequest(params) {
       window.location.href.includes("index.html") ||
       window.location.href.includes("login.html")
     ) {
-      localStorage.setItem("token", JSON.stringify(res.token));
-      window.location.href = "./home.html";
+      if (typeof res == "object") {
+        localStorage.setItem("token", JSON.stringify(res.token));
+        window.location.href = "./home.html";
+      }
     } else if (window.location.href.includes("bookDetail.html")) {
       detailsOfBook();
       closeModalFunc();
